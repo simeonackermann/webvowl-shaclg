@@ -1,0 +1,57 @@
+{
+    "info": [
+        {
+            "title": "Friend of a Friend (FOAF) vocabulary",
+            "url": "http://xmlns.com/foaf/0.1/",
+            "version": "0.99 (Jan 2014)",
+            "authors": "Dan Brickley, Libby Miller",
+            "description": "The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+        }
+    ],
+    "nodes": [
+        {"name": "Concept", "type": "external", "uri": "http://www.w3.org/2004/02/skos/core#Concept"},
+        {"name": "Thing", "type": "thing", "uri": "http://www.w3.org/2002/07/owl#Thing"},
+        {"name": "Person", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Person"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Spatial Thing", "type": "external", "uri": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Thing", "type": "thing", "uri": "http://www.w3.org/2002/07/owl#Thing"},
+        {"name": "Image", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Image"},
+        {"name": "Thing", "type": "thing", "uri": "http://www.w3.org/2002/07/owl#Thing"},
+        {"name": "Document", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Document"},
+        {"name": "PersonalProfileDocument", "type": "class", "uri": "http://xmlns.com/foaf/0.1/PersonalProfileDocument"},
+        {"name": "Agent", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Agent"}
+    ],
+    "links": [
+        {"source": 0, "target": 1, "valueTo": "focus", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/focus"},
+        {"source": 2, "target": 3, "valueTo": "lastName", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/lastName"},
+        {"source": 2, "target": 4, "valueTo": "geekcode", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/geekcode"},
+        {"source": 2, "target": 5, "valueTo": "familyName", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/familyName"},
+        {"source": 2, "target": 6, "valueTo": "firstName", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/firstName"},
+        {"source": 2, "target": 7, "valueTo": "myersBriggs", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/myersBriggs"},
+        {"source": 2, "target": 8, "valueTo": "plan", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/plan"},
+        {"source": 2, "target": 9, "valueTo": "Surname", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/Surname"},
+        {"source": 2, "target": 10, "type": "dotted", "valueTo": "Subclass of", "propertyTo": "subclass", "uriTo": "http://www.w3.org/2000/01/rdf-schema#subClassOf"},
+        {"source": 10, "target": 10, "valueTo": "basedNear", "uriTo": "http://xmlns.com/foaf/0.1/based_near"},
+        {"source": 17, "target": 11, "valueTo": "jabber ID", "propertyTo": "datatype", "typeTo": "inverse functional", "uriTo": "http://xmlns.com/foaf/0.1/jabberID"},
+        {"source": 2, "target": 12, "valueTo": "past project", "uriTo": "http://xmlns.com/foaf/0.1/pastProject"},
+        {"source": 2, "target": 12, "valueTo": "current project", "uriTo": "http://xmlns.com/foaf/0.1/currentProject"},
+        {"source": 2, "target": 13, "valueTo": "image", "uriTo": "http://xmlns.com/foaf/0.1/img", "subpropertiesTo" : [{"id": 15, "direction": "from"}]},
+        {"source": 13, "target": 13, "valueTo": "thumbnail", "uriTo": "http://xmlns.com/foaf/0.1/thumbnail"},
+        {"source": 13, "target": 14, "valueTo": "depicts", "inverse": true, "valueFrom": "depiction", "subpropertiesFrom" : [{"id": 13}], "uriTo": "http://xmlns.com/foaf/0.1/depicts", "uriFrom": "http://xmlns.com/foaf/0.1/depiction"},
+        {"source": 2, "target": 15, "valueTo": "workplace homepage", "uriTo": "http://xmlns.com/foaf/0.1/workplaceHomepage"},
+        {"source": 2, "target": 15, "valueTo": "work info homepage", "uriTo": "http://xmlns.com/foaf/0.1/workplaceInfoHomepage"},
+        {"source": 2, "target": 15, "valueTo": "publications", "uriTo": "http://xmlns.com/foaf/0.1/publications"},
+        {"source": 2, "target": 15, "valueTo": "schoolHomepage", "uriTo": "http://xmlns.com/foaf/0.1/schoolHomepage"},
+        {"source": 13, "target": 15, "type": "dotted", "valueTo": "Subclass of", "propertyTo": "subclass", "uriTo": "http://www.w3.org/2000/01/rdf-schema#subClassOf"},
+        {"source": 16, "target": 15, "type": "dotted", "valueTo": "Subclass of", "propertyTo": "subclass", "uriTo": "http://www.w3.org/2000/01/rdf-schema#subClassOf"},
+        {"source": 2, "target": 2, "valueTo": "knows", "uriTo": "http://xmlns.com/foaf/0.1/knows"},
+        {"source": 2, "target": 17, "type": "dotted", "valueTo": "Subclass of", "propertyTo": "subclass", "uriTo": "http://www.w3.org/2000/01/rdf-schema#subClassOf"}
+    ]
+}

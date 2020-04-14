@@ -1,0 +1,34 @@
+{
+    "info": [
+        {
+            "title": "Friend of a Friend (FOAF) vocabulary",
+            "url": "http://xmlns.com/foaf/0.1/",
+            "version": "0.99 (Jan 2014)",
+            "authors": "Dan Brickley, Libby Miller",
+            "description": "The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+        }
+    ],
+    "nodes": [
+        {"name": "Person", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Person"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+        {"name": "Literal", "type": "literal", "uri": "http://www.w3.org/2000/01/rdf-schema#Literal"},
+
+        {"name": "Image", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Image"},
+
+        {"name": "Agent", "type": "class", "uri": "http://xmlns.com/foaf/0.1/Agent"}
+    ],
+    "links": [
+        {"source": 0, "target": 1, "valueTo": "lastName", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/lastName"},
+        {"source": 0, "target": 2, "valueTo": "familyName", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/familyName"},
+        {"source": 0, "target": 3, "valueTo": "firstName", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/firstName"},
+        {"source": 0, "target": 4, "valueTo": "Surname", "propertyTo": "datatype", "uriTo": "http://xmlns.com/foaf/0.1/Surname"},
+
+        {"source": 0, "target": 6, "type": "dotted", "valueTo": "Subclass of", "propertyTo": "subclass", "uriTo": "http://www.w3.org/2000/01/rdf-schema#subClassOf"},
+
+        {"source": 0, "target": 5, "valueTo": "image", "uriTo": "http://xmlns.com/foaf/0.1/img"},
+
+        {"source": 0, "target": 0, "valueTo": "knows", "uriTo": "http://xmlns.com/foaf/0.1/knows"}
+    ]
+}

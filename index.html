@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Vincent Link, Steffen Lohmann, Eduard Marbach, Stefan Negru, Vitalis Wiens"/>
+    <meta name="keywords"
+          content="webvowl, vowl, visual notation, web ontology language, owl, rdf, ontology visualization, ontologies, semantic web"/>
+    <meta name="description" content="WebVOWL - Web-based Visualization of Ontologies"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="css/vowl.css"/>
+    <link rel="stylesheet" type="text/css" href="css/shaclg.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pagestyle.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>WebVOWL SHACL GUI</title>
+</head>
+<body>
+<main>
+
+    <div id="wrapper">
+        <section id="example">
+            <h2>Example</h2>
+            <p>The following example visualizes the <a href="http://xmlns.com/foaf/spec/20140114.html">Friend of a Friend (FOAF) vocabulary</a> (version 0.99) using VOWL. It has been created with <a href="http://vowl.visualdataweb.org">WebVOWL</a>, a web-based implementation of VOWL. Further examples are provided at <a href="http://vowl.visualdataweb.org">vowl.visualdataweb.org</a>. There is also a <a href="http://vowl.visualdataweb.org">VOWL plugin</a> for the popular ontology editor <a href="http://protege.stanford.edu/">Prot&eacute;g&eacute;</a> that implements the VOWL specification to a large extend.</p>
+            <div id="graph">
+              <div id="resetOption"></div>
+              <div id="sliderOption"></div>
+            </div>
+            <p id="browserCheck" class="hidden"></p>
+            <p id="controlDetails">Zooming is device-dependent: use mouse wheel, double click (+ shift key), or two fingers zooming gesture on the background.</p>
+          </section>
+    </div>
+
+
+</main>
+<script src="js/lib/d3.v3.min.js"></script>
+<script src="js/webVOWLGraph.js"></script>
+<script src="js/specVOWL.js"></script>
+<script src="js/shaclGenerator.js"></script>
+</body>
+</html>
