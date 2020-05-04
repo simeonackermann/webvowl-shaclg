@@ -1,0 +1,4 @@
+[submodule "js/lib/rdform"]
+	path = js/lib/rdform
+	url = git@github.com:simeonackermann/RDForm.git
+	branch = feature-shacl
