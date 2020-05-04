@@ -46,6 +46,10 @@ var loadGraph = function loadGraphFunct() {
     // d3.json("http://vowl.visualdataweb.org/v2/js/data/foaf_spec.json", function(error, data) {
         json = data;
         drawGraph(graphTag, width, height);
+
+
+        var shacl_generator = new VOWL_SHACLG(graphTag);
+
     });
 };
 

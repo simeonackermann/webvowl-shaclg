@@ -1,0 +1,56 @@
+#wrapper{
+    margin:0 auto;
+    max-width: 1600px;
+    text-align: justify;
+    width:80%;
+}
+.hidden {
+    display: none !important;
+}
+
+#shaclForm > .rdform {
+    max-height: 100%;
+    width: 33%;
+    min-width: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    position: absolute;
+    background: white;
+    padding: 5px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.label-node-shaped {
+    fill: orange;
+    font-style: italic;
+}
+
+.addShaclShape {
+    pointer-events: none;
+}
+
+.class, path, .fineline {
+    stroke: #000;
+}
+.class:hover {
+    fill: #acf;
+}
+
+.focused, path.hovered {
+    stroke: black;
+}
+.property:hover {
+    fill: #9c6;
+}
+
+.literal, .node .datatype {
+    fill: #fc3;
+}
+
+rect.focused {
+    stroke-width: 2;
+}

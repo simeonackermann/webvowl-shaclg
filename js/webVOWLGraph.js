@@ -224,11 +224,6 @@ function drawGraph(graphContainerElement, width, height) {
          alert("Name: " + d.name + "\nType: " + d.type);
          })*/
         .on("mouseover", function(d){
-            // shaclg_hoverNode(d);
-            console.log(d.linkIDs);
-
-
-
            if(d.linkIDs){
                d.linkIDs.forEach(function(entry){
                    d3.select(link[0][entry]).select("path").classed("hovered", true);
@@ -293,9 +288,6 @@ function drawGraph(graphContainerElement, width, height) {
     /* ################ GET DETAILS ################ */
     getNodeInfo();
     getLinkInfo();
-
-    // initShaclGenerator(svg);
-    var shacl_generator = new VOWL_SHACLG(svg);
 }
 
 /* Calculates the new positions of the nodes and links */
@@ -1526,8 +1518,6 @@ var getNodeInfo = function getNodeInfoFunct() {
             d3.select("#class").classed("hidden", false);
             d3.select("#prop").classed("hidden", true);
 
-            console.log('Clicked node', d);
-
             setUriLabel(d3.select("#name"), d.name, d.uri);
 
             var equivUriSpan = d3.select("#classEquivUri");
@@ -1656,8 +1646,6 @@ var getLinkInfo = function getLinkInfoFunct() {
             setUriLabel(d3.select("#propname"), l.valueFrom, l.uriFrom);
             d3.select("#typeProp").text(getTypeLink(l.propertyFrom));
 
-            console.log("Clicked label.from", l);
-
             if (l.inverse === true) {
                 d3.select("#inverse").style("display","block");
                 setUriLabel(d3.select("#inverse span"), l.valueTo, l.uriTo);
@@ -1689,8 +1677,6 @@ var getLinkInfo = function getLinkInfoFunct() {
             hideNodeInfoFields();
             setUriLabel(d3.select("#propname"), l.valueTo, l.uriTo);
             d3.select("#typeProp").text(getTypeLink(l.propertyTo));
-
-            console.log("Clicked label.to", l);
 
             if (l.inverse === true) {
                 d3.select("#inverse").style("display","block");

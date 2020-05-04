@@ -29,6 +29,8 @@
 
         {"source": 0, "target": 5, "valueTo": "image", "uriTo": "http://xmlns.com/foaf/0.1/img"},
 
-        {"source": 0, "target": 0, "valueTo": "knows", "uriTo": "http://xmlns.com/foaf/0.1/knows"}
+        {"source": 0, "target": 0, "valueTo": "knows", "uriTo": "http://xmlns.com/foaf/0.1/knows"},
+
+        {"source": 5, "target": 5, "valueTo": "thumbnail", "uriTo": "http://xmlns.com/foaf/0.1/thumbnail"}
     ]
 }
